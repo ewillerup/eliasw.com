@@ -1,0 +1,147 @@
+body {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	padding-left: 16px;
+	padding-right: 16px;
+	max-width: 680px;
+}
+
+hr { 
+	margin-top: 24px;
+	margin-bottom: 48px;
+}
+br { margin-bottom: 24px; }
+
+.pic-profile {
+	max-width: 256px;
+	margin: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 2px;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: -22px;
+	font-family: 'Consolas', monospace;
+}
+a {
+	color: rgb(25, 25, 25);
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: 'Monaco', monospace;
+	margin-bottom: -8px;
+	color: rgb(25, 25, 25);
+}
+
+h3 {
+	font-size: 24px;
+	font-family: 'Monaco', monospace;
+	margin-bottom: 32px;
+	font-style: italic;
+	color: rgb(25, 25, 25);
+}
+
+p {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 24px;
+	margin-bottom: 32px;
+	color: rgb(25, 25, 25);
+}
+
+.artifact {
+	margin: 32px;
+	margin-bottom: 64px;
+}
+.thumbnail {
+	max-width: 680px;
+	width: 100%;
+	max-height: auto;
+	border-radius: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.tag {
+	font-family: 'Consolas', monospace;
+	color: white;
+	background-color: rgb(170, 170, 170);
+	border-radius: 2px;
+
+	float: right;
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-bottom: 3px;
+	padding-right: 6px;
+	margin-left: 8px;
+	margin-top: 2px;
+	
+}
+
+.linkbutton {
+	font-family: 'Consolas', monospace;
+	width: 250px;
+	height: 50px;
+	background: rgb(170, 170, 170);
+	position: relative;
+}
+.linkbutton::after {
+	content: '';
+	position: absolute;
+	left: 0; bottom: 0; width: 0; height: 0;
+	border-left: 25px solid #ffffff;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+}
+.linkbutton::before {
+	content: '';
+	position: absolute;
+	right: -25px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 25px solid rgb(170, 170, 170);
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+}
+
+.social-button {
+	float: right;
+}
+.social-icon {
+	margin-left: 16px;
+	max-width: auto;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+button {
+	display: inline-block;
+	outline: 0;
+	appearance: none;
+	padding: 0px 12px;
+	border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgb(249, 251, 250);
+	border: 1px solid rgb(155, 155, 155);
+	color: rgb(70, 70, 70);
+	font-size: 14px;
+	font-weight: 400;
+	height: 32px;
+}
+button:hover {
+	color: rgb(70, 70, 70);
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(155, 155, 155);
+}
+
