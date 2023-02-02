@@ -17,30 +17,30 @@
 	</div>
 	<hr/>
 
+	<h3>"Bot is sus?" Development Log</h3>
 	<img class="thumbnail" src="susbot-2.PNG" alt=""></a>
-	<h3>Bot is sus?</h3>
-	<hr/>
+	<p></p>
 	<video class="thumbnail" controls>
 		<source src="susbot-gameplay.mp4" type="video/mp4">
 	</video>
 	<p>
-		Bot is sus is a puzzle game for introducing coding to students, putting three dimensions on the old movement
-		programmer education games. The goal was to create an educational game for the Blocksmith platform that would be playable on web 
-		and mobile devices. I worked with my colleague and boss Markus Nigrin throughout the project. Its development
-		spanned the course of about 21 months, going through several iterations before landing on the final version.
+		Bot is sus is a puzzle game for introducing coding to students which I made. It puts three dimensions on the old paper movement
+		coding games. The goal was to create an educational game for the Blocksmith platform that would be playable on web 
+		and mobile devices, specifically optimised for Chromebooks (common in classrooms). Its development
+		spanned the course of about 21 months, going through several iterations before landing on the final version. I worked with my colleague Markus Nigrin. 
 	</p>
 		<img class="thumbnail" src="susbot-og.PNG" alt=""></a>
 	<p>
 		The game started out as "MoveBot," a yellow cube with four directional buttons and a go button. It had some
-		code written originally by Markus to read strings and output a command. It was a great starting point.
+		code written originally by Markus to read strings and output a move command. It was a start.
 	</p>
 	<video class="thumbnail" controls>
 		<source src="susbot-earlyearly-gameplay.mp4" type="video/mp4">
 	</video>
 	<img class="thumbnail" src="susbot-og-code.PNG" alt=""></a>
 	<p>
-		Naturally, the next step was to make a maze for the bot to solve. Actually solving it was pretty cumbersome and unfun, having to put
-		in 20 or so total commands to solve the maze.
+		Naturally, the next step was to make a maze for the bot to solve. Actually solving it was pretty cumbersome. The player had 
+		to input 20 or so commands at once, so I scrapped this idea quickly.
 	</p>
 	<img class="thumbnail" src="maze.PNG" alt=""></a>
 	<p>
@@ -54,7 +54,7 @@
 	<p>
 		The first prototype of the game was a handful of levels in a "Portal" theme. This early version was complex. The drone could move in any
 		direction or even return back to the player. I made a save system which allowed the player to save a string of commands 
-		in case they wanted to use it in a later level. By contrast however, the levels themselves weren't complicated. I cut down many
+		in case they wanted to use it in a later level. By contrast however, the levels themselves weren't complicated. I cut down many of these 
 		features in favor of simplicity.
 	</p>
 	<video class="thumbnail" controls>
@@ -62,37 +62,33 @@
 	</video>
 
 	<p>
-		In the next version the player would be helping the robot get to a goal, instead of the other way around.
+		The game required players to parkour jump from platform to platform. Not everyone in our target audience has experience with first-person games. 
+		In the next version I removed the ability for the player to move and the focus became moving the bot to a goal.
 	</p>
 
 	<p>
-		Our target audience was K-12 students, so a good child-friendly theme was needed.
+		Our target audience was K-12 students, so a more child-friendly theme was needed.
 		We came up with a character named Lisa, a ladybug who finds herself trapped in a lab and needs the player's help to navigate her way out.
 		She could eat berries which allowed her to fly up or down.
 	</p>
-	<!-- Put lisa here hepl I nedd hepl -->
+	<img class="thumbnail" src="lisa-cute.PNG" alt=""></a>
 	<p>
-		One major element that I added was the help of friends. Wyatt appears, a worm who can eat dirt blocks to clear the path or uncover
-		berries. Another friend is Bono, a butterfly who can shield Lisa from dripping water with his wings.
+		I added friends who the player can also control. Wyatt appears, a worm who can eat dirt blocks to clear the path or uncover
+		berries for Lisa. Another friend is Bono, a butterfly who can shield Lisa from dripping water with his wings.
 	</p>
 	<p>
-		By allocating unique abilities to two or more characters navigating the levels became more interesting.
+		By allocating unique abilities more characters the levels became more interesting.
 	</p>
-	<img class="thumbnail" src="ladybug-bumble.PNG" alt=""></a>
+	<img class="thumbnail" src="lisa-friends.PNG" alt=""></a>
 	<p>
-	<p>
-		The code was becoming robust by this time. It needed hit detection and bumpers to avoid walking through walls, among other
-		tweaks like rounding off movement and goal detection.
-	</p>
-	<!-- Ladybug code guts -->
 
 	<p>
-		After letting the project sit for a while Markus got the opportunity to submit the game to hourofcode.org, just before hour of code 
+		We let the project sit for a while. Then Markus got the opportunity to submit a game to hourofcode.org for hour of code 
 		day on December 12th, 2021. He did some research on the keyword trends and suggested we re-theme the game to include "sus" somewhere in 
 		the title. We came up with "Bot is sus?" and a character who is accused by her crew and needs to escape the ship by
 		climbing into vents. 
-		<br>I still think the ladybug idea had leverage, but susbot did serve us well capturing attention through the title and
-		thumbnail; together they have a great hook and an obvious reference to "Among Us," a game already popular with our target
+		<br>The ladybug idea had leverage, but susbot did serve us well capturing attention through the title and
+		thumbnail; together they have a great hook and a reference to "Among Us," a game already popular with our target
 		audience at the time.
 	</p>
 	<img class="thumbnail" src="susbot.jpg" alt=""></a>
@@ -108,11 +104,23 @@
 	</p>
 	<img class="thumbnail" src="susbot-3.PNG" alt=""></a>
 	<p>
-		A chunk of the code on the robot controller. Fun fact: there is a hidden feature in the game which allows the player to code with loops.
+		A chunk of the code on the robot controller. There is a hidden feature in the game which allows the player to code with loops.
 	</p>
 	<img class="thumbnail" src="susbot-4.PNG" alt=""></a>
+
 	<p>
-		
+		Upon release thousands of students from across the U.S. and U.K. played the game. Our dev team took the opportunity and implemented detailed analytics tools. 
+		Unfortunately, we found that most players did not play until the end. Using level-by-level retention data we made updates to fix 
+		major issues and improve the game.
+	</p>
+	
+	<img class="thumbnail" src="susbot-retentino.PNG" alt=""></a>
+	<p>
+		In retrospect I think our biggest mistake was not testing the game correctly. We only tested the game internally, and by release, no K-12 students had 
+		tested the game. In a future project I would test with at least one person from our target audience instead of assuming what they would find fun or not.
+	</p>
+	<p>
+		Making levels easier or harder helped improve retention. Another thing that helped was to reward the player with cosmetics for completing levels.
 	</p>
 
 	<img class="thumbnail" src="susbot-5.PNG" alt=""></a>
@@ -120,18 +128,18 @@
 		I was quite proud of the duck cosmetic; I named him Bernard. He makes a quack sound occasionally and is the most expensive hat. There are also 
 		headphones which emit music note particles.
 	</p>
+
+	<button><a href="https://www.blocksmithxr.com/hub/learnandplay/experience/bot-is-sus-55462">Click here to play the game</a></button>
+
 	<p>
-		Fun and games aside, this was one of the more rewarding and successful projects that I finished. I learned about simplicity and about trying different
-		directions. I got to interpret data and implement a changes through statistics.
+		This was one of the more rewarding and successful projects that I finished. I learned about simplicity and about trying different
+		directions. I learned the importance of testing. I got to interpret user data and make updates.
 		<br>If I had more time to work on the project (or got the opportunity to make a Bot is sus 2) there are several things I would add. One of them
 		being a security camera that can see several squares of the level. Should the bot step on a square that the security camera can see, several lasers
 		are turned on. The player would strategize when and where to turn on the lasers in order to pass through. I would also add some physics based element,
 		like crates that the bot must push into the right places to pass through, similar to slide puzzles.
 	</p>
 
-	<button><a href="https://www.blocksmithxr.com/hub/learnandplay/experience/bot-is-sus-55462">Click here to play the game</a></button>
-
-	<hr/>
 	<h1><a href="/">ELIAS WILLERUP</a></h1>
 	<div class="social-button">
 		<a href="mailto:elias@willerup.com">
