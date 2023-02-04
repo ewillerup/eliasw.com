@@ -6,8 +6,13 @@ body {
 	padding-bottom: 64px;
 	padding-left: 16px;
 	padding-right: 16px;
-	max-width: 680px;
-	background-color:rgb(25, 25, 25)
+	max-width: 720px;
+	height: auto; /* Used to enable scrolling */
+  	background: linear-gradient(80deg, rgb(7, 8, 32) 15%, rgb(47, 47, 59) 50%, rgb(31, 31, 34) 85%);
+}
+
+header {
+	
 }
 
 hr { 
@@ -16,18 +21,9 @@ hr {
 }
 br { margin-bottom: 30px; }
 
-.pic-profile {
-	max-width: 256px;
-	margin: 32px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border-radius: 2px;
-}
-
 h1 {
 	padding-top: -8px;
-	font-size: 24px;
+	font-size: 28px;
 	margin-bottom: -22px;
 	font-family: 'Consolas', monospace;
 	color: rgb(255, 255, 255);
@@ -37,9 +33,16 @@ a {
 	text-decoration: none;
 }
 
+.pic-profile {
+	max-width: 256px;
+	display: block;
+	border-radius: 2px;
+}
+
 h2 {
 	font-size: 24px;
 	font-family: 'Monaco', monospace;
+	padding-top: 32px;
 	padding-bottom: 24px;
 	color: rgb(255, 255, 255);
 }
@@ -47,7 +50,7 @@ h2 {
 h3 {
 	font-size: 24px;
 	font-family: 'Monaco', monospace;
-	margin-bottom: 32px;
+	margin-bottom: -8px;
 	font-style: italic;
 	color: rgb(255, 255, 255);
 }
@@ -121,7 +124,10 @@ p {
 	float: right;
 }
 .social-icon {
-	margin-left: 16px;
+	max-height: 24px;
+	margin-left: 22px;
+	margin-top: -6px;
+	opacity: 0.8;
 	max-width: auto;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
@@ -136,7 +142,6 @@ button {
 	text-decoration: none;
 	cursor: pointer;
 	background-color: rgb(249, 251, 250);
-	border: 1px solid rgb(155, 155, 155);
 	color:rgb(25, 25, 25);
 	font-size: 14px;
 	font-weight: 400;
@@ -146,5 +151,10 @@ button:hover {
 	color: rgb(70, 70, 70);
 	background-color: rgb(255, 255, 255);
 	border: 2px solid rgb(155, 155, 155);
+}
+
+footer {
+	height: 100px;
+	height: 100px;
 }
 
