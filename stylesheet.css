@@ -8,7 +8,7 @@ body {
 	padding-right: 16px;
 	max-width: 720px;
 	height: auto; /* Used to enable scrolling */
-  	background: linear-gradient(80deg, rgb(7, 8, 32) 15%, rgb(47, 47, 59) 50%, rgb(31, 31, 34) 85%);
+  	background: linear-gradient(80deg, rgb(7, 8, 32) 15%, rgb(47, 47, 59) 50%, rgb(24, 24, 43) 85%);
 }
 
 header {
@@ -52,11 +52,15 @@ a {
 }
 
 @media screen and (max-width: 680px) {
-	.img-float-left, .img-float-right {
+	.img-float-left {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 100px;
+	}
+	.img-float-right {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -152,6 +156,11 @@ p {
 .social-button {
 	float: right;
 }
+@media screen and (max-width: 400px) {
+	.social-button {
+		float:inline-end;
+	}
+}
 .social-icon {
 	max-height: 24px;
 	margin-left: 22px;
@@ -160,6 +169,13 @@ p {
 	max-width: auto;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
+}
+@media screen and (max-width: 400px) {
+	.social-icon {
+		margin-right: 22px;
+		margin-left: auto;
+		padding-top: 64px;
+	}
 }
 
 button {
