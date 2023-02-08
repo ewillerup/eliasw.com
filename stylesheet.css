@@ -158,7 +158,9 @@ p {
 }
 @media screen and (max-width: 400px) {
 	.social-button {
-		float:inline-end;
+		padding-bottom: 36px;
+		float: right;
+		margin: 12px;
 	}
 }
 .social-icon {
@@ -172,8 +174,8 @@ p {
 }
 @media screen and (max-width: 400px) {
 	.social-icon {
+		margin: -12px;
 		margin-right: 22px;
-		margin-left: auto;
 		padding-top: 64px;
 	}
 }
