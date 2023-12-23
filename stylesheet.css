@@ -3,7 +3,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 16px;
-	padding-bottom: 200px;
+	padding-bottom: 300px;
 	padding-left: 16px;
 	padding-right: 16px;
 	max-width: 720px;
@@ -12,12 +12,12 @@ body {
 }
 
 header {
-	
+	padding: 100px;
 }
 
 hr { 
 	margin-top: 24px;
-	margin-bottom: 48px;
+	margin-bottom: 80px;
 }
 
 br { margin-bottom: 30px; }
@@ -116,6 +116,11 @@ ul {
 	margin-right: auto;
 	display: block;
 }
+.thumbnail:hover {
+	width: 102%;
+	margin-left: -7px;
+}
+
 .tags {
 	margin: auto;
 	display:flex ;
